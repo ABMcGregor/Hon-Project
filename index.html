@@ -1,88 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- Head setup: your old pages (req.php, login.php). Source [1] -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social engineering responses study: consent</title>
+    <title>WRITE HERE: page title (shown in the browser tab)</title>
 
+    <!-- Bootstrap CSS link with integrity hash: your old req.php. Source [1] -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- .container: your login.php [1]; W3Schools Bootstrap 5 Containers [2].
+         mt-4, mb-5, mb-3: W3Schools Bootstrap 5 Utilities, GfG margin and padding [3]. -->
     <div class="container mt-4 mb-5">
 
-        <h1 class="mb-3">Social engineering responses study</h1>
+        <h1 class="mb-3">WRITE HERE: main title of the study</h1>
 
-        <h2 class="h4 mt-4">About this study</h2>
+
+        <!-- ============ YOUR TEXT SECTIONS ============
+             Copy the block below once for each section you want.
+             "h4" heading class: W3Schools Bootstrap 5 Typography, GfG Bootstrap 5 Typography Headings [4]. -->
+
+        <h2 class="h4 mt-4">WRITE HERE: section heading 1</h2>
         <p>
-            This study looks at how people respond to short scenarios involving
-            online messages and requests. [EDIT: one or two plain sentences on the topic.
-            Check with your supervisor and ethics form how much to say about the AI comparison.]
+            WRITE HERE: your text for section 1.
         </p>
 
-        <h2 class="h4 mt-4">What you will be asked to do</h2>
+        <h2 class="h4 mt-4">WRITE HERE: section heading 2</h2>
         <p>
-            You will read a series of short scenarios, one at a time. For each one, write what you would
-            do and why, in no more than 150 words. The whole task should take about [EDIT: 20] minutes.
+            WRITE HERE: your text for section 2.
         </p>
 
-        <h2 class="h4 mt-4">What happens to your responses</h2>
+        <h2 class="h4 mt-4">WRITE HERE: section heading 3</h2>
         <p>
-            Your responses are collected through this website and stored using Google Forms and Google Sheets.
-            The researcher will check them for personal information, then anonymise them before anyone else sees them.
-            There is no login, and no name or email address is collected.
+            WRITE HERE: your text for section 3.
         </p>
 
-        <h2 class="h4 mt-4">Your rights</h2>
-        <p>
-            Taking part is voluntary. You can withdraw at any point until you press the final submit button.
-            After that, your responses cannot be traced back to you, so they cannot be removed.
-        </p>
+        <!-- ============ END OF YOUR TEXT SECTIONS ============ -->
 
-        <h2 class="h4 mt-4">Please do not include personal information</h2>
-        <p>
-            Do not write names, email addresses, workplaces or anything else that could identify you or someone else.
-        </p>
 
-        <h2 class="h4 mt-4">Contact</h2>
-        <p>
-            Researcher: [EDIT: name and university email]<br>
-            Ethics approval reference: [EDIT: add once approved]
-        </p>
-
-        <!-- Optional lines to check with your ethics form: an age line such as "I am 18 or over" -->
-
+        <!-- Form tag: your login.php [1]. -->
         <form id="consentForm" class="mt-4">
 
+            <!-- Checkbox markup: W3Schools Bootstrap 5 Checkboxes and Radio buttons, GfG Bootstrap 5 Checks and Radios [5].
+                 Keep each id matching its label's "for" attribute.
+                 Add or remove checkboxes as you need, but update the JavaScript to match. -->
             <div class="form-check mb-3">
                 <input class="form-check-input" type="checkbox" id="consent1">
                 <label class="form-check-label" for="consent1">
-                    I have read the information above and agree to take part.
+                    WRITE HERE: consent statement 1
                 </label>
             </div>
 
             <div class="form-check mb-3">
                 <input class="form-check-input" type="checkbox" id="consent2">
                 <label class="form-check-label" for="consent2">
-                    I understand I can withdraw until I submit my responses.
+                    WRITE HERE: consent statement 2
                 </label>
             </div>
 
             <div class="form-check mb-4">
                 <input class="form-check-input" type="checkbox" id="consent3">
                 <label class="form-check-label" for="consent3">
-                    I will not include personal information in my answers.
+                    WRITE HERE: consent statement 3
                 </label>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100" id="startBtn" disabled>Start the scenarios</button>
+            <!-- Button classes: your login.php [1]. disabled attribute: W3Schools HTML button disabled attribute [6]. -->
+            <button type="submit" class="btn btn-primary w-100" id="startBtn" disabled>WRITE HERE: button text</button>
 
         </form>
 
     </div>
 
-    <!-- Step 3: uncomment once javascript/script.js exists
-    <script src="javascript/script.js"></script>
-    -->
+    <!-- Step 3: uncomment this line once you have written javascript/script.js -->
+    <!-- <script src="javascript/script.js"></script> -->
 </body>
 </html>
