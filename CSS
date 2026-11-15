@@ -1,3 +1,7 @@
+/* All rules below are from your old style.css [1].
+   Changes: !important removed, duplicate rules merged, header size in rem,
+   background image and vw-sized rules left out. */
+
 table {
     border-collapse: collapse;
     padding: 25px;
@@ -36,8 +40,6 @@ body {
     background-color: #000;
     color: snow;
 }
-
-.container { max-width: 42rem; }
 
 .form-control {
     color: black;
