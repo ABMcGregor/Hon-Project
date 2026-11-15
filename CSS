@@ -1,0 +1,48 @@
+table {
+    border-collapse: collapse;
+    padding: 25px;
+    font-size: 1em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+table, th, td {
+    border: 1px solid white;
+    background-color: black;
+}
+
+th { background-color: #333; }
+
+thead tr { text-align: left; }
+
+thead th {
+    font-size: 1.1rem;
+    padding: 12px 15px;
+    color: snow;
+}
+
+table td {
+    padding: 12px 15px;
+    color: snow;
+}
+
+tbody tr { border-bottom: 1px solid #dddddd; }
+
+.reqCol  { width: 30%; }
+.metCol  { width: 60%; }
+.fileCol { width: 10%; }
+
+body {
+    background-color: #000;
+    color: snow;
+}
+
+.container { max-width: 42rem; }
+
+.form-control {
+    color: black;
+    background-color: white;
+    border: 1px solid #444;
+}
+
+.form-label { color: snow; }
