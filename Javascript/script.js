@@ -18,7 +18,7 @@ $(document).ready(function ()
 
     {
 
-        if ($('#consent1').is(':checked') && $('#consent2').is(':checked') && $('#consent3').is(':checked'))
+        if ($('#consent1').is(':checked'))
 
         {
 
