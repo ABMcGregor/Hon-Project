@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WRITE HERE: page title (shown in the browser tab)</title>
+
+    <!-- Bootstrap CSS link: copied from your old req.php -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- CHANGE THIS PATH to match where your CSS file really is in your repo -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+
+
+<body>
+
+
+    <!-- Header: copied from your old index.php -->
+    <header class="text-center my-4">
+        <h1>WRITE HERE: main title of the study</h1>
+    </header>
+
+
+    <!-- Container: copied from your old login.php -->
+    <div class="container mt-4">
+
+
+        <!-- YOUR TEXT SECTIONS. Copy a heading and paragraph for each section you want. -->
+
+        <h2 class="mt-4">WRITE HERE: section heading 1</h2>
+
+        <p>
+            WRITE HERE: your text for section 1.
+        </p>
+
+
+        <!-- END OF YOUR TEXT SECTIONS -->
+
+
+        <!-- Form: copied from your old login.php, with action changed to the next page.
+             No method is set, so it uses GET, the default. -->
+        <form id="consentForm" action="scenario.html" class="p-4 rounded bg-black">
+
+
+            <!-- Each checkbox sits in a div.mb-3 with a label, like the fields in your login.php.
+                 "required" is the same attribute your inputs already use, so the browser will not
+                 let the form go to the next page until all three boxes are ticked. -->
+            <div class="mb-3">
+                <input type="checkbox" id="consent1" required>
+                <label for="consent1" class="form-label">WRITE HERE: consent statement 1</label>
+            </div>
+
+
+            <!-- Button classes: copied from your old login.php -->
+            <button type="submit" id="startBtn" class="btn btn-primary w-100">WRITE HERE: button text</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Script tags: copied from your old pages (jQuery, Bootstrap, then your own script) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- CHANGE THIS PATH to match where your JavaScript file really is in your repo -->
+    <script src="Javascript/script.js"></script>
+
+</body>
+
+</html>
