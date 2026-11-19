@@ -74,14 +74,22 @@
 
 
             
-        <!-- THE STUDY QUESTION: kept visibly separate from the post -->
+        <!-- THE QUESTION: kept visibly separate from the post -->
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSeBVzOWBXmrQD9r4jxeM6tNk4269nfc5EUHdjPcx3z_EvPztg/formResponse" method="POST" target="hidden_iframe">
+            
   <p>
-  <label for="w3review">What would you do in this situation: </label></p>
+      <label for="w3review">What would you do in this situation: </label>
+  </p>
+            
   <textarea id="w3review" name="w3review" rows="4" cols="50">Type Here...</textarea>
+      
   <br>
+      
   <input type="submit" value="Submit">
 
+  </form>
 
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
 
 
 
@@ -97,7 +105,7 @@
                  let the form go to the next page until all three boxes are ticked. -->
             <div class="mb-3">
                 <input type="checkbox" id="consent1" required>
-                <label for="consent1" class="form-label">If Yes, move onto the Scenarios</label>
+                <label for="consent1" class="form-label">Haver you submitted? If Yes, move onto the next Scenario</label>
             </div>
 
 
