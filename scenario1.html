@@ -78,21 +78,26 @@
 
             <div class="p-4">
 
-                <form id="answerForm" action="scenario2.html">
+        <!-- Form: copied from your old login.php, with action changed to the next page.
+             No method is set, so it uses GET, the default. -->
+        <form id="consentForm" action="scenario2.html" class="p-4 rounded bg-black">
 
-                    <div class="mb-3">
-                        <label for="answer" class="form-label">What would you do, and why?</label>
-                        <textarea class="form-control" id="answer" rows="8" required></textarea>
-                    </div>
 
-                    <div class="mb-3">
-                        <input type="checkbox" id="confirm1" required>
-                        <label for="confirm1" class="form-label">Is all information present?</label>
-                    </div>
+            <!-- Each checkbox sits in a div.mb-3 with a label, like the fields in your login.php.
+                 "required" is the same attribute your inputs already use, so the browser will not
+                 let the form go to the next page until all three boxes are ticked. -->
+            <div class="mb-3">
+                <input type="checkbox" id="consent1" required>
+                <label for="consent1" class="form-label">If Yes, move onto the Scenarios</label>
+            </div>
 
-                    <button type="submit" id="submitBtn" class="btn btn-primary w-100">Next Page</button>
 
-                </form>
+            <!-- Button classes: copied from your old login.php -->
+            <button type="submit" id="startBtn" class="btn btn-primary w-100">Next Page</button>
+
+        </form>
+
+    </div>
 
             </div>
 
