@@ -22,52 +22,60 @@
 
 
 <body>
-
-
-    <!-- Header: copied from your old index.php -->
+ <!-- Blog name: your old index.php header -->
     <header class="text-center my-4">
-        <h1>Scenario 1</h1>
+        <h1>WRITE HERE: blog name</h1>
     </header>
 
 
-    <!-- Container: copied from your old login.php -->
-    <div class="container mt-4">
+    <div class="container">
 
+        <!-- THE POST: a card with a header and footer -->
+        <div class="card bg-black border">
 
-        <!-- YOUR TEXT SECTIONS. Copy a heading and paragraph for each section you want. -->
-
-        <!-- <h2 class="mt-4">WRITE HERE: section heading 1</h2> -->
-
-        <p>
-            Scenario 1 Paragraph Here.
-        </p>
-
-
-        <!-- END OF YOUR TEXT SECTIONS -->
-
-
-        <!-- Form: copied from your old login.php, with action changed to the next page.
-             No method is set, so it uses GET, the default. -->
-        <form id="consentForm" action="scenario2.html" class="p-4 rounded bg-black">
-
-
-            <!-- Each checkbox sits in a div.mb-3 with a label, like the fields in your login.php.
-                 "required" is the same attribute your inputs already use, so the browser will not
-                 let the form go to the next page until all three boxes are ticked. -->
-            <div class="mb-3">
-                <input type="checkbox" id="consent1" required>
-                <label for="consent1" class="form-label">Is all information present?</label>
+            <div class="card-header">
+                <h2>Scenario 1</h2>
             </div>
 
+            <div class="p-4">
+                <h5>WRITE HERE: made-up author name, made-up date</h5>
 
-            <!-- Button classes: copied from your old login.php -->
-            <button type="submit" id="startBtn" class="btn btn-primary w-100">Next Page</button>
+                <p>
+                    Scenario 1 Paragraph Here.
+                </p>
+            </div>
 
-        </form>
+            <div class="card-footer">
+                <small>Scenario 1 of 8</small>
+            </div>
+
+        </div>
+
+
+        <!-- THE ANSWER BOX: a second card, like a comment box under a post -->
+        <div class="card bg-black border mt-4">
+            <div class="p-4">
+
+                <form id="answerForm" action="scenario2.html">
+
+                    <div class="mb-3">
+                        <label for="answer" class="form-label">What would you do, and why?</label>
+                        <textarea class="form-control" id="answer" rows="8" required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="checkbox" id="confirm1" required>
+                        <label for="confirm1" class="form-label">Is all information present?</label>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="btn btn-primary w-100">Next Page</button>
+
+                </form>
+
+            </div>
+        </div>
 
     </div>
-
-
     <!-- Script tags: copied from your old pages (jQuery, Bootstrap, then your own script) -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
