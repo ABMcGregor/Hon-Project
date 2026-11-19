@@ -22,33 +22,39 @@
 
 
 <body>
-<!-- Blog name and tagline: your old index.php header -->
-    <header class="text-center my-4">
-        <h1>WRITE HERE: made-up blog name</h1>
-        <p>WRITE HERE: made-up tagline</p>
-    </header>
 
 
-    <div class="container">
-
-        <!-- Breaking banner: alert markup from your old login.php -->
-        <div class="alert alert-danger" role="alert">
-            <strong>BREAKING:</strong> WRITE HERE: short alarming line
-        </div>
 
 
-        <!-- THE POST -->
-        <div class="card bg-black border">
+    
+<!-- BLOG NAME. Source: W3Schools "How TO - Blog Layout", Step 1 (div class="header") -->
+    <div class="header">
+        <h2>WRITE HERE: made-up blog name</h2>
+    </div>
 
-            <div class="card-header">
-                <h2>WRITE HERE: LOUD HEADLINE IN CAPITALS!!!</h2>
-                <h5>WRITE HERE: posted by (made-up name), made-up date</h5>
+
+    <!-- TWO COLUMNS. Source: W3Schools "How TO - Blog Layout", Step 1 (row, leftcolumn, rightcolumn) -->
+    <div class="row">
+
+
+        <div class="leftcolumn">
+
+
+            <!-- BREAKING BANNER. Source: W3Schools "How TO - Alerts", Step 1 (div class="alert").
+                 The optional close button from that page is left out on purpose. -->
+            <div class="alert">
+                <strong>BREAKING:</strong> WRITE HERE: short alarming line
             </div>
 
-            <div class="p-4">
 
-                <!-- Photo placeholder. Delete it, or swap for an <img class="img-fluid"> like your old index.php -->
-                <div class="bg-secondary p-5 text-center mb-3">WRITE HERE: [photo]</div>
+            <!-- THE POST. Source: W3Schools "How TO - Blog Layout" (card, h2 heading, h5 line, fakeimg, p) -->
+            <div class="card">
+
+                <h2>WRITE HERE: LOUD HEADLINE IN CAPITALS!!!</h2>
+
+                <h5>WRITE HERE: posted by (made-up name), made-up date</h5>
+
+                <div class="fakeimg" style="height:200px;">WRITE HERE: [photo]</div>
 
                 <p>WRITE HERE: paragraph 1 of the rumour post.</p>
 
@@ -58,13 +64,11 @@
 
             </div>
 
-            <div class="card-footer">
-                <small>WRITE HERE: made-up share count, e.g. Shared 12,000 times</small>
-            </div>
-
-        </div>
 
 
+
+
+            
         <!-- THE STUDY QUESTION: kept visibly separate from the post -->
         <div class="card bg-black border mt-4">
 
@@ -95,6 +99,13 @@
         </div>
 
     </div>
+
+
+
+
+        
+
+    
     <!-- Script tags: copied from your old pages (jQuery, Bootstrap, then your own script) -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
