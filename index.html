@@ -9,7 +9,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WRITE HERE: page title (shown in the browser tab)</title>
+    <title>page title (shown in the browser tab)</title>
 
     <!-- Bootstrap CSS link: copied from your old req.php -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -20,6 +20,7 @@
 </head>
 
 
+    
 
 <body>
 
@@ -43,24 +44,33 @@
         </p>
 
 
+
+
+
         <!-- END OF YOUR TEXT SECTIONS -->
 
 
         <!-- Form: copied from your old login.php, with action changed to the next page.
              No method is set, so it uses GET, the default. -->
         <form id="consentForm" action="scenario1.html" class="p-4 rounded bg-black">
+        
 
+            <!-- PARTICIPANT CODE INPUT: Participant will be requested to input their given ID -->
+            <label>Enter your participant code:</label>
+            <input type="text" id="participantCode" required>
 
-            <!-- Each checkbox sits in a div.mb-3 with a label, like the fields in your login.php.
-                 "required" is the same attribute your inputs already use, so the browser will not
-                 let the form go to the next page until all three boxes are ticked. -->
+            
+
+            <!-- checkbox sits in a div.mb-3 with a label.
+                 "required" is the same attribute inputs already use, so the browser will not
+                 let the form go to the next page until boxes are ticked. -->
             <div class="mb-3">
                 <input type="checkbox" id="consent1" required>
                 <label for="consent1" class="form-label">If Yes, move onto the Scenarios</label>
             </div>
 
 
-            <!-- Button classes: copied from your old login.php -->
+            <!-- Button classes: copied from old login.php -->
             <button type="submit" id="startBtn" class="btn btn-primary w-100">Next Page</button>
 
         </form>
@@ -68,13 +78,26 @@
     </div>
 
 
-    <!-- Script tags: copied from your old pages (jQuery, Bootstrap, then your own script) -->
+    <!-- Script tags: copied from old pages (jQuery, Bootstrap, then your own script) -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-    <!-- CHANGE THIS PATH to match where your JavaScript file really is in your repo -->
+    <!-- JAVASCRIPT PATH: path to javascript location in repo -->
     <script src="Javascript/script.js"></script>
+
+    
+<script>
+    var form = document.getElementById("consentForm");
+
+    form.onsubmit = function() {
+        var code = document.getElementById("participantCode").value;
+        localStorage.setItem("participantCode", code);
+    };
+</script>
+
+
+    
 
 </body>
 
