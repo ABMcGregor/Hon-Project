@@ -11,10 +11,10 @@
 
     <title>page title</title>
 
-    <!-- Bootstrap CSS link: copied from your old req.php -->
+    <!-- Bootstrap CSS link copied from old req.php -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <!-- CHANGE THIS PATH to match where your CSS file really is in your repo -->
+    <!-- CSS file path in repo -->
     <link rel="stylesheet" href="CSS/style.css">
 
 </head>
@@ -27,7 +27,7 @@
 
 
     
-<!-- BLOG NAME. Source: W3Schools "How TO - Blog Layout", Step 1 (div class="header") -->
+<!-- Blog Name/Header Source: W3Schools "How TO - Blog Layout" -->
     <div class="header">
         <h2>made-up blog name</h2>
     </div>
@@ -36,7 +36,7 @@
 
 
     
-    <!-- TWO COLUMNS. Source: W3Schools "How TO - Blog Layout", Step 1 (row, leftcolumn, rightcolumn) -->
+    <!-- Two Columns/Rows Source: W3Schools "How TO - Blog Layout" -->
     <div class="row">
 
 
@@ -44,15 +44,14 @@
 
 
             
-            <!-- BREAKING BANNER. Source: W3Schools "How TO - Alerts", Step 1 (div class="alert").
-                 The optional close button from that page is left out on purpose. -->
+            <!-- Breaking Banner/Alert Source: W3Schools "How TO - Alerts" -->
             <div class="alert">
                 <strong>BREAKING:</strong>short alarming line
             </div>
 
 
             
-            <!-- THE POST. Source: W3Schools "How TO - Blog Layout" (card, h2 heading, h5 line, fakeimg, p) -->
+            <!-- The Post Source: W3Schools "How TO - Blog Layout" -->
             <div class="card">
 
                 <h2>LOUD HEADLINE IN CAPITALS!!!</h2>
@@ -72,15 +71,16 @@
 
 
 
-
-               <!-- THE QUESTION: kept visibly separate from the post -->
+  <!-- Google Form Sheet Submission/Collection -->
+  <!-- kept visibly separate from the post -->
   <form action="https://docs.google.com/forms/d/e/1FAIpQLSeBVzOWBXmrQD9r4jxeM6tNk4269nfc5EUHdjPcx3z_EvPztg/formResponse" method="POST" target="hidden_iframe">
 
-  <!-- PARTICIPANT ID: this is to track participant ID -->
+  <!-- Participant ID for Google Form -->
   <input type="hidden" id="participantCodeField" name="entry.135336169">
 
 
-  <!-- TEXT PARAGRAPH BOX: this is for participants to enter responses -->
+      
+  <!-- Text paragraph box for participants to enter responses -->
   <p>
       <label for="w3review">What would you do in this situation: </label>
   </p>
@@ -100,21 +100,20 @@
 
 
                 
-        <!-- Form: copied from old login.php, with action changed to the next page.
-             No method is set, so it uses GET, the default. -->
+        
         <form id="consentForm" action="scenario2.html" class="p-4 rounded bg-black">
 
 
-            <!-- Each checkbox sits in a div.mb-3 with a label.
-                 "required" is the same attribute inputs already use, so the browser will not
-                 let the form go to the next page until boxes are ticked. -->
+            
+            
             <div class="mb-3">
                 <input type="checkbox" id="consent1" required>
                 <label for="consent1" class="form-label">Haver you submitted? If Yes, move onto the next Scenario</label>
             </div>
 
+            
 
-            <!-- Button classes: copied from old login.php -->
+            <!-- Button copied from old login.php -->
             <button type="submit" id="startBtn" class="btn btn-primary w-100">Next Page</button>
 
         </form>
